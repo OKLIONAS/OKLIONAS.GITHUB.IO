@@ -1,0 +1,25 @@
+.slider {
+    width: auto;
+    height: auto;
+}
+
+.slides {
+    display: flex;
+    width: 50%;
+    height: auto;
+    position: absolute;
+    left: 24.5%;
+    padding: 15px;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.slide.visible {
+    display: block;
+}
+
+/*-------------------------------------------*/
