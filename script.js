@@ -10,14 +10,14 @@ function showSlide(index) {
 function showNextSlide() {
   const nextIndex = (currentIndex + 1) % slides.length;
   console.log(nextIndex);
-  if (nextIndex > 8) return;  // nummret ska vara den sista sidan som inte kommer att synas
+  if (nextIndex > 10) return;  // nummret ska vara den sista sidan som inte kommer att synas
   showSlide(nextIndex);
 }
 
 function showPrevSlide() {
   const prevIndex = (currentIndex - 1 + slides.length) % slides.length;
   console.log(prevIndex);
-  if (prevIndex > 3) return;  // nummret ska vara den sista sidan som inte kommer att synas
+  if (prevIndex > 10) return;  // nummret ska vara den sista sidan som inte kommer att synas
   showSlide(prevIndex);
 }
 
