@@ -1,30 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AlexSkutbergComic</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="stylebut.css">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styleMain.css">
+    <link rel="stylesheet" href="styleText.css">
+    <link rel="stylesheet" href="styleBut.css">
+    <link rel="stylesheet" href="styleImg.css">
 </head>
-<!--Testar iouweuigoiewoiewjifewiegwiegwiewijgijgewijegwijgewiegwijogewigrewriogijgr-->
+
 <body>
     <header>
-        <div class="topBut">
-            <button class="buttonNav" onclick="location.href='index.html';" class="button buttonHome">🏠 Home</button>
-            <button class="buttonNav" onclick="window.location.href='https://www.instagram.com/alexskutberg/';"
-                target="_blank" class="button buttonInst">📷 My Instagram</a>
-                <button class="buttonNav" onclick="window.location.href='https://www.tiktok.com/@oklionas';"
-                    target="_blank" class="button buttonTik">🎵 My Tiktok</a>
+        <div class="headerClass" id="myHeader">
+            <center>
+                <h1>My Portfolio</h1>
+            </center>
+            <nav>
+                <ul>
+                    <li><a href="#about-me">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact-me">Contact Me</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
-
-    <div class="coverImg">
-        <button class="buttonImgBut" style="background-color:black; " onclick="location.href='index2.html';"><img
-                src="Image/CoverImg.jpg" class="buttonImg"></button>
-    </div>
+    <main>
+        <div id="highlightBackground">
+            <div class="profilePosition">
+                <section id="about-me">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <h2>About Me</h2>
+                    <img src="IMG_8949.JPG" alt="Profile Picture">
+                    <p>Jag är Alex Skutberg, en 19-årig konstnär och teknikentusiast som bor i Östersund, Sverige. Min
+                        passion för konst och kreativitet har alltid varit en stor del av mitt liv, och jag spenderar
+                        mycket tid med att rita och skapa vackra bilder.
+                        <br>
+                        <br>
+                        Utöver min konstnärliga sida har jag ett starkt intresse för bilkörning och programmering. Att
+                        utforska nya tekniska lösningar är en utmaning som jag alltid är redo att ta mig an. Det var
+                        därför jag valde att studera teknik på Storsjögymnasiet.
+                        <br>
+                        <br>
+                        När jag inte ritar eller arbetar med mina programmeringsprojekt, älskar jag att köra min bil och
+                        upptäcka nya platser. Det är en av mina största passioner, och jag älskar känslan av frihet som
+                        det ger mig.
+                        <br>
+                        <br>
+                        Jag bor tillsammans med min fyrbenta följeslagare, min hund Fjodor. Vi njuter av att utforska
+                        naturen runt Östersund tillsammans och uppleva allt det har att erbjuda. Jag har stora
+                        framtidsplaner och ser fram emot alla spännande äventyr som ligger framför mig.
+                    </p>
+            </div>
+            </section>
+            <section id="projects">
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <h2>Projects</h2>
+                <ul>
+                    <li>
+                        <a href="Oklionas.github.io/index.html">
+                            <img src="BeanHuntLogo.png" class="projectImg" alt="Bean Hunt Thumbnail">
+                            <h3>Bean Hunt / Web Comic</h3>
+                            <p>Här är mig egengjorde serietidning med en egen programerad hemsida.</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="IMG_8949.JPG" class="projectImg" alt="Project 2 Thumbnail">
+                            <h3>Project 2</h3>
+                            <p>Här skriver jag om mitt projekt hejehejhejehejehejhejehejehej</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="IMG_8949.JPG" class="projectImg" alt="Project 3 Thumbnail">
+                            <h3>Project 3</h3>
+                            <p>Här skriver jag om mitt projekt hejehejhejehejehejhejehejehej</p>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <section id="contact-me">
+                <h2>Contact Me</h2>
+                <center>
+                    <form>
+                        <label for="name">Name: </label>
+                        <input type="text" id="name" name="name" required>
+                        <label for="email">Email: </label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="message">Message: </label>
+                        <textarea id="message" name="message" required></textarea>
+                        <button type="submit">Send</button>
+                    </form>
+            </section>
+            </center>
+        </div>
+    </main>
+    <footer>
+        <p>Copyright © My Portfolio 2023.
+    </footer>
 </body>
+<script src="script.js"></script>
 
 </html>

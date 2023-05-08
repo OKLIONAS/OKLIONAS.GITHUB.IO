@@ -1,0 +1,66 @@
+/* Main Styles */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    color: #333;
+}
+
+body {
+    background-color: #ffd8ab;
+}
+
+.headerClass {
+    background-color: #F15156;
+    position: fixed;
+    width: 100%;
+}
+
+.profilePosition {
+    margin-top: 9rem;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+label {
+    font-size: 1.2rem;
+}
+
+input,
+textarea {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+}
+
+
+#highlightBackground {
+    width: 100%; 
+   /* border: solid 120px #FFC07F; */
+    background-color: #FFC07F;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #F15156;
+    color: #333;
+    text-align: center;
+    padding: 1rem;
+}

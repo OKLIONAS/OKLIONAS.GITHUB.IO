@@ -1,0 +1,32 @@
+
+button {
+    font-size: 1.2rem;
+    background-color: #721121;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #901529;
+}
+
+
+li {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+li:hover {
+    transform: translateY(-5px);
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    padding: 1rem;
+    color: #721121;
+    background-color: #FFCF99;
+}

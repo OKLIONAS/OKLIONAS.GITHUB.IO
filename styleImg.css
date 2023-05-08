@@ -1,0 +1,11 @@
+img {
+    max-width: 25%;
+    border-style: solid;
+    border-color: #A5402D;
+}
+
+
+.projectImg {
+    height: 137px;
+    width: auto;
+}

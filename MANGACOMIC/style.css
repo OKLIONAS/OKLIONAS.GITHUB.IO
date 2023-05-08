@@ -1,0 +1,30 @@
+header,
+footer {
+    margin: unset;
+    padding: 10px;
+    background-color: white;
+    text-align: center;
+    transform: translateY(-10%) translateX(-10%);
+    width: 110.4%;
+    height: 65px;
+}
+
+header {
+    padding: auto;
+    position: relative;
+}
+
+footer {
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    height: 70px;
+    margin: -8px;
+    position: absolute;
+}
+
+
+body {
+    background-color: black;
+    overflow: hidden;
+}
