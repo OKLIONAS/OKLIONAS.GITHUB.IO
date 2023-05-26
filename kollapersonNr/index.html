@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kolla PersonNr</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<center>
+    <h2>Kontrollera personnummer</h2>
+
+    <p>Här kan ni kontrollera om ett personnummmer är giltigt</p>
+
+    <div class="mainDiv">
+        <b>Personnummmer 10 siffror: </b>
+        <input type="text" id="prsnr_input" maxlength="10" size="10">
+        <button id="checkButton" onclick="checkButtClick()">Kolla nu</button>
+        <div>
+            <p id="svar"></p>
+        </div>
+    </div>
+    <br>
+        <br>
+        <a href="index2.html" style="text-decoration:none" >Vill du generera ett giltigt personnummer?</a>
+</center>
+</body>
+<script src="main.js"></script>
+
+</html>

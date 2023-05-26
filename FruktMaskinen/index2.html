@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FruktMaskin</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <h1>FruktMaskin</h1>
+  
+  <div id="frukterDiv"></div>
+  
+  <p>Mata in nummer på frukt du vill ha: <input type="number" id="fruktnrInput"></p>
+  <button onclick="printfruit()">Välj frukt</button>
+  
+  <div id="goInputDiv" style="display: none;">
+    <p>Vill du ha en frukt till? (y/n): <input type="text" id="goInput"></p>
+    <button onclick="continueLoop()">Fortsätt</button>
+  </div>
+
+  <hr>
+  
+  <div id="resultatDiv"></div>
+</body>
+</html>

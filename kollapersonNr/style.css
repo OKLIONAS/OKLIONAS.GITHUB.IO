@@ -1,0 +1,55 @@
+body {
+  background-color: #f0f7ff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+h2 {
+  color: #003366;
+}
+
+.mainDiv {
+  margin-top: 20px;
+  background-color: #e4f2ff;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+b, p {
+  color: #003366;
+}
+
+input[type="text"] {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  padding: 6px 12px;
+}
+
+button,
+a {
+  background-color: #003366;
+  border: none;
+  border-radius: 4px;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  padding: 6px 12px;
+  margin-left: 10px;
+}
+
+#Svar {
+  margin-top: 10px;
+  color: #003366;
+}
+
+#Output {
+  margin-top: 10px;
+  color: #003366;
+  display: inline-block;
+}
+
+#copyButton {
+  margin-left: 10px;
+}

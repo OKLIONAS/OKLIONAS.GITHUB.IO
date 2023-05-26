@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FruktMaskin</title>
+	<script src="script.js"></script>
+</head>
+<body>
+	<h1>FruktMaskin</h1>
+	<p>Välj en frukt från listan nedan:</p>
+	<ul>
+		<li>1: Apelsin</li>
+		<li>2: Banan</li>
+		<li>3: Melon</li>
+		<li>4: Kiwi</li>
+		<li>5: Citron</li>
+	</ul>
+	<form>
+		<label for="fruktnr">Mata in nummer på frukt du vill ha:</label>
+		<input type="text" id="fruktnr" name="fruktnr">
+		<br>
+		<label for="go">Vill du ha en frukt till?</label>
+		<input type="text" id="go" name="go">
+	</form>
+	<hr>
+	<p>Föresten, du får en frukt för du är snäll:</p>
+	<p id="slumpfrukt"></p>
+	<script>
+		var frukter = ["Apelsin", "Banan", "Melon", "Kiwi", "Citron"];
+		var looping = true;
+
+		function printfruit(userinput) {
+			var fnr = parseInt(userinput);
+			var text = "<br>" + frukter[fnr-1] + " Kommer Här!<br>";
+			document.getElementById("fruktmaskin-output").innerHTML += text;
+		}
+
+		document.getElementById("go").addEventListener("change", function() {
+			var fruktnr = document.getElementById("fruktnr").value;
+			var go = document.getElementById("go").value;
+
+			var output = document.getElementById("fruktmaskin-output");
+
+			var i = 1;
+			for (var j=0; j<frukter.length; j++) {
+				var text = i + ": " + frukter[j] + "<br>";
+				output.innerHTML += text;
+				i++;
+			}
+
+			printfruit(fruktnr);
+
+			if (go.toLowerCase() === "n") {
+				looping = false;
+			}
+
+			if (!looping) {
+				output.innerHTML += "---------------------------------------------------------------<br>";
+				output.innerHTML += "<br>Föresten, du får en frukt för du är snäll<br>";
+				var slumpfrukt = Math.floor(Math.random() * frukter.length);
+				printfruit(slumpfrukt+1);
+			}
+
+			document.getElementById("go").value = "";
+			document.getElementById("fruktnr").value = "";
+		});
+	</script>
+	<div id="fruktmaskin-output"></div>
+</body>
+</html>
